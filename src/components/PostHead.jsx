@@ -9,7 +9,7 @@ const PostHead = ({ post }) => {
     const { user } = useAuthContext();
 
     const handleClick = async () => {
-        const response = await fetch(`http://localhost:4000/api/posts//${post._id}`, {
+        const response = await fetch(`https://reflect-api.onrender.com/api/posts//${post._id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`
@@ -29,17 +29,17 @@ const PostHead = ({ post }) => {
         <li>
             <span className={styles.postHeadHeader}>
                 <h2>
-                    <Link to={`/api/posts/${post._id}`}>{ post.title }</Link>
+                    <Link to={`/api/posts/${post._id}`}>{post.title}</Link>
                 </h2>
-                <span 
+                <span
                     className="material-symbols-outlined"
                     onClick={handleClick}
                 >
                     delete
                 </span>
             </span>
-            <div>{ format(new Date(post.date), 'MMMM d, y') }</div>
-            <p>{ post.content.substring(0, 200) + ' ...' }</p>
+            <div>{format(new Date(post.date), 'MMMM d, y')}</div>
+            <p>{post.content.substring(0, 200) + ' ...'}</p>
         </li>
     );
 };
