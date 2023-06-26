@@ -27,8 +27,8 @@ export const PostsContextProvider = ({ children }) => {
     });
 
     return (
-        <PostsContext.Provider value={ { ...state, dispatch }}>
-            { children }
+        <PostsContext.Provider value={{ ...state, dispatch }}>
+            {children}
         </PostsContext.Provider>
     );
 };

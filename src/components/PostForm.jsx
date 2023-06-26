@@ -46,13 +46,13 @@ const PostForm = () => {
                 <div>
                     <h3> Create a post </h3>
                 </div>
-                <input
+                <input className='inu'
                     type="text"
                     {...register("title", { required: 'required field' })}
                     placeholder="Title"
                 />
                 <p>{errors.title?.message}</p>
-                <input
+                <input className='inu'
                     type="date"
                     {...register("date", { required: 'required field' })}
                 />

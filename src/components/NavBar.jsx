@@ -10,15 +10,11 @@ const NavBar = () => {
 
     return (
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/"> Home </Link>
-                    </li>
-                </ul>
+            <nav className="reflect">
+                <Link to="/"> Reflect  </Link>
             </nav>
 
-            <span> Reflect </span>
+
 
             {user ? (
                 <div>
@@ -30,8 +26,8 @@ const NavBar = () => {
 
             ) : (
                 <div>
-                    <Link to="/api/login"> Login </Link>
-                    <Link to="/api/signup"> Signup </Link>
+                    <Link to="/api/login" className='loso'> Login </Link>
+                    <Link to="/api/signup" className='loso'> Signup </Link>
                 </div>
             )}
         </header>
