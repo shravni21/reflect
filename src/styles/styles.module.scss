@@ -8,10 +8,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14pt;
   line-height: 1.33em;
-  background-color: #bdd6f3;
+  // background-color: #bdd6f3;
+  background-color: #e90064;
+  overflow: auto;
 }
-
-/* Header styles... */
+body::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
 
 main {
   display: grid;
@@ -89,7 +93,8 @@ p {
 }
 
 .diaryPost > p {
-  line-height: 3rem;
+  line-height: 2rem;
+  font-size: 12pt;
 }
 
 .postForm {
@@ -136,6 +141,11 @@ p {
   border: none;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+.postForm > textarea::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
 }
 .postForm > textarea:focus {
   outline: none;

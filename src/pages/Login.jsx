@@ -14,14 +14,14 @@ const Login = () => {
     return (
         <form className={styles.loginForm} onSubmit={handleSubmit(onSubmit)}>
             <h3> Log In </h3>
-            <input
+            <input className="inup"
                 type="email"
                 {...register("email", { required: 'required field' })}
                 placeholder="email"
                 autoComplete="off"
             />
             <p>{errors.email?.message}</p>
-            <input
+            <input className="inup"
                 type="password"
                 {...register("password", { required: 'required field' })}
                 placeholder="password"

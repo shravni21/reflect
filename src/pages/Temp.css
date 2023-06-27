@@ -1,0 +1,104 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #E90064;
+}
+
+.homeOuter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.innerdiv {
+    border-color: black;
+    border-width: 3px;
+    border-radius: 30px;
+    transform: translateY(0%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.img1 {
+    margin: 20px auto;
+    /* Add some space above the image */
+    width: 50%;
+    height: auto;
+}
+
+.img1 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 11 / 7;
+    /* Set the aspect ratio to 11:7 */
+}
+
+.homeh1 {
+    font-size: 50px;
+    text-shadow: 1px 1.5px #000000;
+}
+
+.homebuttion {
+    background-color: #16FF00;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+.homebuttion:hover {
+    background-color: #00FFD1;
+}
+
+.homelink {
+    color: #00FFD1;
+}
+
+.homelink:hover {
+    color: #16FF00;
+}
+
+@media (max-width: 576px) {
+    .homeh1 {
+        font-size: 35px;
+    }
+
+    .homebuttion {
+        width: 100px;
+        height: 30px;
+    }
+
+    .img1 {
+        width: 80%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .homeh1 {
+        font-size: 35px;
+    }
+
+    .homebuttion {
+        width: 100px;
+        height: 30px;
+    }
+
+    .img1 {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .homeh1 {
+        font-size: 50px;
+    }
+
+    .img1 {
+        width: 60%;
+    }
+}

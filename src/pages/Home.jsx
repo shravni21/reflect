@@ -38,7 +38,7 @@ const Home = () => {
 
     return (
         <>
-            <div>
+            <div className='ok'>
                 <h1> Posts </h1>
 
                 <ul className={styles.postList}>
@@ -48,7 +48,7 @@ const Home = () => {
                 </ul>
             </div>
 
-            <div>
+            <div className='ok'>
                 <PostForm />
             </div>
         </>
