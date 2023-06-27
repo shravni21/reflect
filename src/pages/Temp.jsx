@@ -17,9 +17,12 @@ const Temp = () => {
                 </button>
                 <p>
                     if you are not registered{' '}
-                    <a href="/home" className="homelink">
+                    <button
+                        className="homelink"
+                        onClick={() => navigate('/home')}
+                    >
                         sign up
-                    </a>
+                    </button>
                 </p>
             </div>
         </div>
