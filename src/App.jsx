@@ -13,7 +13,7 @@ const App = () => {
     const elements = useRoutes([
         {
             path: '/',
-            element: <Temp />, // Render Temp component for the first route
+            element: <Temp />,
         },
         {
             path: '/',
@@ -27,7 +27,7 @@ const App = () => {
         }
     ]);
 
-    return elements || <Home />; // Return Home component if elements are not available
+    return elements || <Home />;
 
 };
 
