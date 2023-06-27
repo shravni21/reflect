@@ -1,13 +1,21 @@
 nav.reflect {
   padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  background: linear-gradient(135deg, #1a0515, #3f0b63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 4px 4px 6px rgba(63, 18, 82, 0.7),
+    -2px -2px 4px rgba(63, 18, 82, 0.7), 0 0 8px rgba(63, 18, 82, 0.7);
 }
 
 nav.reflect a {
-  text-decoration: solid;
+  text-decoration: none;
   color: rgb(229, 202, 229);
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +25,7 @@ nav.reflect a {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14pt;
-  // line-height: 1.33em;
+  line-height: 1.33em;
   // margin-bottom: 1000px;
   margin: 0;
   padding: 0;
@@ -28,9 +36,10 @@ body {
 
 header {
   display: flex;
-  height: 60px;
+  height: 70px;
   width: 100%;
-  background-color: rgb(147, 178, 209);
+  background: linear-gradient(135deg, #ff5f9e, #ea047e);
+  backdrop-filter: blur(30px);
   position: fixed;
   top: 0;
   padding: 10px 30px;
@@ -44,32 +53,22 @@ nav ul {
 }
 
 a {
-  text-decoration: none;
-  color: white;
   margin-left: 15px;
+  display: inline;
+  text-decoration: none;
+  font-size: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0.5, 0, 0);
+  margin-right: 10px;
+  color: white;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: rgb(226, 226, 34);
-}
-.loso {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 14px;
-  padding: 8px 16px;
-  margin-right: 10px;
-  border-radius: 20px;
-  background-color: blue;
-  color: white;
-  transition: background-color 0.3s ease;
-}
-
-.loso:hover {
-  background-color: darkblue;
+  color: #1f0329;
 }
 
 span {
-  color: white;
+  color: rgb(19, 11, 37);
   flex-grow: 1;
   text-align: center;
 }
@@ -86,7 +85,7 @@ button {
   width: 100px;
   height: 24px;
   font-size: 14pt;
-  background-color: rgb(83, 36, 36);
+  background-color: #2d033b;
   color: white;
   border-radius: 24px;
   border: none;
@@ -94,13 +93,13 @@ button {
 }
 
 button:hover {
-  background-color: rgb(117, 49, 49);
+  background-color: #2d033b;
 }
 
 button {
   font-size: 12pt;
   border-radius: 50px;
-  background-color: rgb(141, 141, 190);
+  background-color: #810ca8;
 }
 
 main {
@@ -113,6 +112,7 @@ main {
 
 h1 {
   margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(225, 132, 222, 0.5);
 }
 
 p {
@@ -215,14 +215,14 @@ body {
 }
 
 .footer {
-  background-color: rgba(242, 242, 242, 0.8);
+  background: linear-gradient(135deg, #ff5f9e, #ea047e);
   padding: 20px;
   text-align: center;
   width: 100%;
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #f6f6f6;
   margin-top: auto;
-  margin-bottom: -200px;
+  margin-bottom: -1000px;
 }
 
 .footer__social {
@@ -231,7 +231,7 @@ body {
 
 .footer__link {
   margin: 0 10px;
-  color: #333;
+  color: #060047;
 }
 
 .footer__icon {
@@ -240,7 +240,7 @@ body {
 }
 
 .footer__icon:hover {
-  color: blue;
+  color: #810ca8;
 }
 
 @media screen and (max-height: 600px) {

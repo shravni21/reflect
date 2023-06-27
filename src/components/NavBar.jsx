@@ -9,7 +9,7 @@ const NavBar = () => {
     const handleClick = () => logout();
 
     return (
-        <header>
+        <header className='header'>
             <nav className="reflect">
                 <Link to="/"> Reflect  </Link>
             </nav>

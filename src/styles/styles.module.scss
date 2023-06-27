@@ -57,11 +57,12 @@ p {
 }
 
 .postList > li a:hover {
-  color: rgb(67, 67, 255);
+  color: #810ca8;
 }
 
 .postList > li div {
-  color: rgb(129, 36, 36);
+  color: #b3005e;
+  font-size: medium;
 }
 
 .postList .postHeadHeader {
@@ -88,7 +89,7 @@ p {
 
 .diaryPost > div {
   margin-bottom: 1rem;
-  color: rgb(209, 66, 109);
+  color: #100324;
   font-size: 12pt;
 }
 
@@ -106,7 +107,7 @@ p {
 
 .postForm > div {
   margin: 0 auto 10px auto;
-  color: rgb(255, 0, 149);
+  color: #100324;
   padding: 10px;
 }
 
@@ -128,7 +129,7 @@ p {
 }
 
 .postForm > p {
-  color: rgb(210, 63, 136);
+  color: rgb(33, 4, 18);
 }
 
 .postForm > textarea {
@@ -153,14 +154,15 @@ p {
 }
 
 .postForm > button {
-  background-color: green;
+  background-color: rgb(43, 210, 43);
   height: 30px;
   color: white;
   border-radius: 24px;
-  font-size: 16pt;
+  font-size: 10pt;
   font-weight: bold;
   cursor: pointer;
   border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 480px) {
@@ -181,22 +183,22 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(160, 160, 203);
-  padding: 20px;
+  background: linear-gradient(135deg, #ff5f9e, #ffaacf);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(117, 5, 64, 0.5), 0 0 40px rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
 .loginForm > input {
   margin-bottom: 10px;
   height: 32px;
   padding: 8px;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 .loginForm .loginSignUpToggle {
   height: 32px;
-  background-color: orange;
+  background-color: rgb(198, 168, 209);
   margin-bottom: 10px;
   border: none;
   outline: none;
@@ -206,16 +208,31 @@ p {
 
 .loginForm h3 {
   margin: 0 auto 25px auto;
+  text-shadow: 2px 2px 4px #f2abd9;
 }
 
-.loginForm .submit {
+.submit {
   height: 32px;
-  background-color: green;
+  background-color: #16ff00;
   color: white;
-  font-size: 14pt;
+  font-size: 10pt;
   border: none;
   outline: none;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background-color: #14d400;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (max-width: 480px) {
