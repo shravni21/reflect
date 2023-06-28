@@ -16,7 +16,7 @@ const PostForm = () => {
         };
 
         try {
-            const response = await fetch('https://reflect-api.onrender.com/api/posts', {
+            const response = await fetch('https://reflect-api-5p9k.vercel.app/api/posts', {
                 method: 'POST',
                 body: JSON.stringify(post),
                 headers: {

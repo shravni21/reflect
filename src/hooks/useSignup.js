@@ -11,7 +11,7 @@ export const useSignup = () => {
         setError(null);
 
         try {
-            const response = await fetch('https://reflect-api.onrender.com/api/user/signup', {
+            const response = await fetch('https://reflect-api-5p9k.vercel.app/api/user/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

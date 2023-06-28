@@ -9,7 +9,7 @@ const PostHead = ({ post }) => {
     const { user } = useAuthContext();
 
     const handleClick = async () => {
-        const response = await fetch(`https://reflect-api.onrender.com/api/posts//${post._id}`, {
+        const response = await fetch(`https://reflect-api-5p9k.vercel.app/api/posts/${post._id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`

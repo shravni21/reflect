@@ -11,7 +11,7 @@ const DiaryPost = () => {
 
     useEffect(() => {
         const fetchPost = async () => {
-            const response = await fetch(`https://reflect-api.onrender.com/api/posts/${id}`, {
+            const response = await fetch(`https://reflect-api-5p9k.vercel.app/api/posts/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
