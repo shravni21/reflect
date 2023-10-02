@@ -39,7 +39,7 @@ const Home = () => {
     return (
         <>
             <div className='ok'>
-                <h1> Posts </h1>
+                <h1> Chronicles </h1>
 
                 <ul className={styles.postList}>
                     {posts && posts.map(post => (
