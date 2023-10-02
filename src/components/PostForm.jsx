@@ -44,7 +44,7 @@ const PostForm = () => {
         <>
             <form className={styles.postForm} onSubmit={handleSubmit(onSubmit)}>
                 <div>
-                    <h3> Create a post </h3>
+                    <h3> Write your diary! </h3>
                 </div>
                 <input className='inu'
                     type="text"
