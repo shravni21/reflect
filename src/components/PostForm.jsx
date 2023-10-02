@@ -64,7 +64,7 @@ const PostForm = () => {
                     placeholder="enter diary content"
                 />
                 <p>{errors.content?.message}</p>
-                <button type="submit" value="submit"> POST </button>
+                <button type="submit" value="submit"> SAVE </button>
             </form>
         </>
     );
